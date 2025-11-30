@@ -13,7 +13,7 @@
     "@cloudinary/react": "^1.14.3",
     "@cloudinary/url-gen": "^1.22.0",
     "@react-pdf/renderer": "^4.3.0",
-    "axios": "^1.12.2",
+    "axios": "^1.13.2",
     "chart.js": "^4.5.0",
     "html2pdf.js": "^0.10.3",
     "jspdf-autotable": "^3.5.28",

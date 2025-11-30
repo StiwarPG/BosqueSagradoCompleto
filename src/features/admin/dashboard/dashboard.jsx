@@ -36,7 +36,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchSedes = async () => {
       try {
-        const response = await fetch("http://localhost:5272/api/reportes/sedes");
+        const response = await fetch("http://www.bosquesagrado.somee.com/api/reportes/sedes");
         if (!response.ok) {
           throw new Error("Error al obtener sedes");
         }
@@ -60,7 +60,7 @@ const Dashboard = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `http://localhost:5272/api/reportes/reservas/${sedeSeleccionada}/${filtro}`
+          `http://www.bosquesagrado.somee.com/api/reportes/reservas/${sedeSeleccionada}/${filtro}`
         );
 
         if (!response.ok) {
@@ -86,7 +86,7 @@ const Dashboard = () => {
       try {
         // Datos para gráfico de cabañas - CORREGIDO: sin parámetro de sede
         const responseCabañas = await fetch(
-          `http://localhost:5272/api/reportes/cabanas-populares/${filtro}`
+          `http://www.bosquesagrado.somee.com/api/reportes/cabanas-populares/${filtro}`
         );
         if (responseCabañas.ok) {
           const dataCabañas = await responseCabañas.json();
@@ -95,7 +95,7 @@ const Dashboard = () => {
 
         // Datos para gráfico de sedes
         const responseSedes = await fetch(
-          `http://localhost:5272/api/reportes/reservas-sedes/${filtro}`
+          `http://www.bosquesagrado.somee.com/api/reportes/reservas-sedes/${filtro}`
         );
         if (responseSedes.ok) {
           const dataSedes = await responseSedes.json();
@@ -115,7 +115,7 @@ const Dashboard = () => {
     
     try {
       const response = await fetch(
-        `http://localhost:5272/api/reportes/reservas-fecha/${sedeSeleccionada}/${fecha}`
+        `http://www.bosquesagrado.somee.com/api/reportes/reservas-fecha/${sedeSeleccionada}/${fecha}`
       );
       
       if (response.ok) {

@@ -376,14 +376,14 @@ const VALIDATION_RULES = {
 // ===============================================
 // DATOS DE CONFIGURACIÓN
 // ===============================================
-const API_CABANAS = "http://localhost:5272/api/Cabanas";
-const API_SEDES = "http://localhost:5272/api/Sede";
-const API_TEMPORADAS = "http://localhost:5272/api/Temporada";
-const API_TIPOS_CABANA = "http://localhost:5272/api/TipoCabana";
-const API_COMODIDADES = "http://localhost:5272/api/Comodidades";
-const API_CABANA_COMODIDADES = "http://localhost:5272/api/CabanaPorComodidades";
-const API_RESERVAS = "http://localhost:5272/api/Reservas";
-const API_IMAGENES = "http://localhost:5272/api/ImgCabana";
+const API_CABANAS = "http://www.bosquesagrado.somee.com/api/Cabanas";
+const API_SEDES = "http://www.bosquesagrado.somee.com/api/Sede";
+const API_TEMPORADAS = "http://www.bosquesagrado.somee.com/api/Temporada";
+const API_TIPOS_CABANA = "http://www.bosquesagrado.somee.com/api/TipoCabana";
+const API_COMODIDADES = "http://www.bosquesagrado.somee.com/api/Comodidades";
+const API_CABANA_COMODIDADES = "http://www.bosquesagrado.somee.com/api/CabanaPorComodidades";
+const API_RESERVAS = "http://www.bosquesagrado.somee.com/api/Reservas";
+const API_IMAGENES = "http://www.bosquesagrado.somee.com/api/ImgCabana";
 
 const ITEMS_PER_PAGE = 5;
 
@@ -1388,7 +1388,7 @@ const Cabins = () => {
     if (error.code === 'NETWORK_ERROR' || error.message === 'Network Error') {
       errorMessage = "Error de conexión. Verifica que el servidor esté ejecutándose.";
     } else if (error.code === 'ECONNREFUSED') {
-      errorMessage = "No se puede conectar al servidor en http://localhost:5272";
+      errorMessage = "No se puede conectar al servidor en http://www.bosquesagrado.somee.com";
     } else if (error.response) {
       if (error.response.status === 400) {
         errorMessage = `Error de validación: ${error.response.data?.title || error.response.data?.message || 'Datos inválidos'}`;

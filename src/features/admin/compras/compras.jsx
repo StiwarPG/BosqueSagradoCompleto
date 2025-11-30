@@ -320,10 +320,10 @@ const VALIDATION_RULES = {
 // ===============================================
 // CONFIGURACIÓN DE API
 // ===============================================
-const API_COMPRAS = "http://localhost:5272/api/Compras";
-const API_PROVEEDORES = "http://localhost:5272/api/Proveedore";
-const API_PRODUCTOS = "http://localhost:5272/api/Productos";
-const API_DETALLE_COMPRAS = "http://localhost:5272/api/DetalleCompras";
+const API_COMPRAS = "http://www.bosquesagrado.somee.com/api/Compra";
+const API_PROVEEDORES = "http://www.bosquesagrado.somee.com/api/Proveedore";
+const API_PRODUCTOS = "http://www.bosquesagrado.somee.com2/api/Productos";
+const API_DETALLE_COMPRAS = "http://www.bosquesagrado.somee.com/api/DetalleCompras";
 const IVA_RATE = 0.19;
 const ITEMS_PER_PAGE = 10;
 
@@ -959,7 +959,7 @@ const AdminCompras = () => {
     if (error.code === 'NETWORK_ERROR' || error.message === 'Network Error') {
       errorMessage = "Error de conexión. Verifica que el servidor esté ejecutándose.";
     } else if (error.code === 'ECONNREFUSED') {
-      errorMessage = "No se puede conectar al servidor en http://localhost:5272";
+      errorMessage = "No se puede conectar al servidor en http://www.bosquesagrado.somee.com";
     } else if (error.response) {
       if (error.response.status === 400) {
         errorMessage = `Error de validación: ${error.response.data?.title || error.response.data?.message || 'Datos inválidos'}`;

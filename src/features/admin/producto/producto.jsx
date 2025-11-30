@@ -296,9 +296,9 @@ const VALIDATION_RULES = {
 // ===============================================
 // DATOS DE CONFIGURACIÓN
 // ===============================================
-const API_PRODUCTOS = "http://localhost:5272/api/Productos";
-const API_CATEGORIAS = "http://localhost:5272/api/CategoriaProductos";
-const API_MARCAS = "http://localhost:5272/api/MarcaProducto";
+const API_PRODUCTOS = "http://www.bosquesagrado.somee.com/api/Producto";
+const API_CATEGORIAS = "http://www.bosquesagrado.somee.com/api/CategoriaProductos";
+const API_MARCAS = "http://www.bosquesagrado.somee.com/api/MarcaProducto";
 const ITEMS_PER_PAGE = 5;
 
 // ===============================================
@@ -911,7 +911,7 @@ const Productos = () => {
     if (error.code === 'NETWORK_ERROR' || error.message === 'Network Error') {
       errorMessage = "Error de conexión. Verifica que el servidor esté ejecutándose.";
     } else if (error.code === 'ECONNREFUSED') {
-      errorMessage = "No se puede conectar al servidor en http://localhost:5272";
+      errorMessage = "No se puede conectar al servidor en http://www.bosquesagrado.somee.com";
     } else if (error.response) {
       if (error.response.status === 400) {
         errorMessage = `Error de validación: ${error.response.data?.title || error.response.data?.message || 'Datos inválidos'}`;
