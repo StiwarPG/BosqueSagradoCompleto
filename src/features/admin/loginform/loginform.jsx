@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 import { useNavigate } from "react-router-dom";
 
 // URL base de la API
-const API_BASE_URL = 'http://www.bosquesagrado.somee.com/api';
+const API_BASE_URL = 'https://www.bosquesagrado.somee.com/api';
 
 // Funciones API para obtener datos
 const fetchCabinsFromAPI = async () => {
@@ -195,7 +195,7 @@ const loginWithAPI = async (email, password) => {
     console.error('❌ Error en login:', error);
    
     if (error.message.includes('Failed to fetch') || error.message.includes('ERR_CONNECTION_REFUSED')) {
-      throw new Error('No se puede conectar con el servidor. Verifica que el backend esté corriendo en http://www.bosquesagrado.somee.com');
+      throw new Error('No se puede conectar con el servidor. Verifica que el backend esté corriendo en https://www.bosquesagrado.somee.com');
     }
    
     throw error;
@@ -349,7 +349,7 @@ const registerWithAPI = async (userData) => {
     }
    
     if (error.message.includes('Failed to fetch') || error.message.includes('ERR_CONNECTION_REFUSED')) {
-      throw new Error('No se puede conectar con el servidor. Verifica que el backend esté corriendo en http://www.bosquesagrado.somee.com');
+      throw new Error('No se puede conectar con el servidor. Verifica que el backend esté corriendo en https://www.bosquesagrado.somee.com');
     }
    
     throw error;
@@ -1233,7 +1233,7 @@ function LoginRegister() {
     if (!isServerOnline) {
       showErrorAlert(
         'Servidor no disponible',
-        'El servidor no está disponible. Verifica que el backend esté corriendo en http://www.bosquesagrado.somee.com'
+        'El servidor no está disponible. Verifica que el backend esté corriendo en https://www.bosquesagrado.somee.com'
       );
       return;
     }
@@ -1788,7 +1788,7 @@ function LoginRegister() {
           fontSize: "14px",
           fontWeight: "bold"
         }}>
-          ⚠️ El servidor no está disponible. Verifica que el backend esté corriendo en http://www.bosquesagrado.somee.com
+          ⚠️ El servidor no está disponible. Verifica que el backend esté corriendo en https://www.bosquesagrado.somee.com
         </div>
       )}
 

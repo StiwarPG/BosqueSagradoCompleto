@@ -320,10 +320,10 @@ const VALIDATION_RULES = {
 // ===============================================
 // CONFIGURACIÓN DE API
 // ===============================================
-const API_COMPRAS = "http://www.bosquesagrado.somee.com/api/Compra";
-const API_PROVEEDORES = "http://www.bosquesagrado.somee.com/api/Proveedore";
-const API_PRODUCTOS = "http://www.bosquesagrado.somee.com2/api/Productos";
-const API_DETALLE_COMPRAS = "http://www.bosquesagrado.somee.com/api/DetalleCompras";
+const API_COMPRAS = "https://www.bosquesagrado.somee.com/api/Compra";
+const API_PROVEEDORES = "https://www.bosquesagrado.somee.com/api/Proveedore";
+const API_PRODUCTOS = "https://www.bosquesagrado.somee.com2/api/Productos";
+const API_DETALLE_COMPRAS = "https://www.bosquesagrado.somee.com/api/DetalleCompras";
 const IVA_RATE = 0.19;
 const ITEMS_PER_PAGE = 10;
 

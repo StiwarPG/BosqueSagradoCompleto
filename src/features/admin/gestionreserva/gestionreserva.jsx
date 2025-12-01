@@ -285,7 +285,7 @@ const VALIDATION_RULES = {
 // ===============================================
 // DATOS DE CONFIGURACIÓN
 // ===============================================
-const API_BASE_URL = "http://www.bosquesagrado.somee.com/api";
+const API_BASE_URL = "https://www.bosquesagrado.somee.com/api";
 const API_RESERVAS = `${API_BASE_URL}/Reservas`;
 const API_CABANAS = `${API_BASE_URL}/Cabanas`;
 const API_SEDES = `${API_BASE_URL}/Sede`;
@@ -1155,7 +1155,7 @@ const GestionReserva = () => {
     if (error.code === 'NETWORK_ERROR' || error.message === 'Network Error') {
       errorMessage = "Error de conexión. Verifica que el servidor esté ejecutándose.";
     } else if (error.code === 'ECONNREFUSED') {
-      errorMessage = "No se puede conectar al servidor en http://www.bosquesagrado.somee.com";
+      errorMessage = "No se puede conectar al servidor en https://www.bosquesagrado.somee.com";
     } else if (error.response) {
       if (error.response.status === 400) {
         errorMessage = `Error de validación: ${error.response.data?.title || error.response.data?.message || 'Datos inválidos'}`;

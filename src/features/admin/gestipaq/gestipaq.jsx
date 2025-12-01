@@ -384,11 +384,11 @@ const VALIDATION_RULES = {
 // ===============================================
 // DATOS DE CONFIGURACIÓN
 // ===============================================
-const API_PAQUETES = "http://www.bosquesagrado.somee.com/api/Paquetes";
-const API_SERVICIOS = "http://www.bosquesagrado.somee.com/api/Servicios";
-const API_SEDES = "http://www.bosquesagrado.somee.com/api/Sede";
-const API_SERVICIO_POR_PAQUETE = "http://www.bosquesagrado.somee.com/api/ServicioPorPaquete";
-const API_SEDE_POR_PAQUETE = "http://www.bosquesagrado.somee.com/api/SedePorPaquete";
+const API_PAQUETES = "https://www.bosquesagrado.somee.com/api/Paquetes";
+const API_SERVICIOS = "https://www.bosquesagrado.somee.com/api/Servicios";
+const API_SEDES = "httsp://www.bosquesagrado.somee.com/api/Sede";
+const API_SERVICIO_POR_PAQUETE = "https://www.bosquesagrado.somee.com/api/ServicioPorPaquete";
+const API_SEDE_POR_PAQUETE = "https://www.bosquesagrado.somee.com/api/SedePorPaquete";
 const ITEMS_PER_PAGE = 5;
 
 // ===============================================
@@ -1447,7 +1447,7 @@ const Gestipaq = () => {
     if (error.code === 'NETWORK_ERROR' || error.message === 'Network Error') {
       errorMessage = "Error de conexión. Verifica que el servidor esté ejecutándose.";
     } else if (error.code === 'ECONNREFUSED') {
-      errorMessage = "No se puede conectar al servidor en http://www.bosquesagrado.somee.com";
+      errorMessage = "No se puede conectar al servidor en https://www.bosquesagrado.somee.com";
     } else if (error.response) {
       if (error.response.status === 400) {
         errorMessage = `Error de validación: ${error.response.data?.title || error.response.data?.message || 'Datos inválidos'}`;

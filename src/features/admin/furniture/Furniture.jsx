@@ -279,9 +279,9 @@ const VALIDATION_RULES = {
 // ===============================================
 // CONFIGURACIÓN DE API
 // ===============================================
-const API_COMODIDADES = "http://www.bosquesagrado.somee.com/api/Comodidades";
-const API_CABANA_COMODIDADES = "http://www.bosquesagrado.somee.com/api/CabanaPorComodidades";
-const API_CABANAS = "http://www.bosquesagrado.somee.com/api/Cabanas";
+const API_COMODIDADES = "https://www.bosquesagrado.somee.com/api/Comodidades";
+const API_CABANA_COMODIDADES = "https://www.bosquesagrado.somee.com/api/CabanaPorComodidades";
+const API_CABANAS = "https://www.bosquesagrado.somee.com/api/Cabanas";
 const ITEMS_PER_PAGE = 5;
 
 // ===============================================
@@ -944,7 +944,7 @@ const Furniture = () => {
     if (error.code === 'NETWORK_ERROR' || error.message === 'Network Error') {
       errorMessage = "Error de conexión. Verifica que el servidor esté ejecutándose.";
     } else if (error.code === 'ECONNREFUSED') {
-      errorMessage = "No se puede conectar al servidor en http://www.bosquesagrado.somee.com";
+      errorMessage = "No se puede conectar al servidor en https://www.bosquesagrado.somee.com";
     } else if (error.response) {
       if (error.response.status === 400) {
         errorMessage = `Error de validación: ${error.response.data?.title || error.response.data?.message || 'Datos inválidos'}`;

@@ -376,14 +376,14 @@ const VALIDATION_RULES = {
 // ===============================================
 // DATOS DE CONFIGURACIÓN
 // ===============================================
-const API_CABANAS = "http://www.bosquesagrado.somee.com/api/Cabanas";
-const API_SEDES = "http://www.bosquesagrado.somee.com/api/Sede";
-const API_TEMPORADAS = "http://www.bosquesagrado.somee.com/api/Temporada";
-const API_TIPOS_CABANA = "http://www.bosquesagrado.somee.com/api/TipoCabana";
-const API_COMODIDADES = "http://www.bosquesagrado.somee.com/api/Comodidades";
-const API_CABANA_COMODIDADES = "http://www.bosquesagrado.somee.com/api/CabanaPorComodidades";
-const API_RESERVAS = "http://www.bosquesagrado.somee.com/api/Reservas";
-const API_IMAGENES = "http://www.bosquesagrado.somee.com/api/ImgCabana";
+const API_CABANAS = "https://www.bosquesagrado.somee.com/api/Cabanas";
+const API_SEDES = "https://www.bosquesagrado.somee.com/api/Sede";
+const API_TEMPORADAS = "https://www.bosquesagrado.somee.com/api/Temporada";
+const API_TIPOS_CABANA = "https://www.bosquesagrado.somee.com/api/TipoCabana";
+const API_COMODIDADES = "https://www.bosquesagrado.somee.com/api/Comodidades";
+const API_CABANA_COMODIDADES = "https://www.bosquesagrado.somee.com/api/CabanaPorComodidades";
+const API_RESERVAS = "https://www.bosquesagrado.somee.com/api/Reservas";
+const API_IMAGENES = "https://www.bosquesagrado.somee.com/api/ImgCabana";
 
 const ITEMS_PER_PAGE = 5;
 
