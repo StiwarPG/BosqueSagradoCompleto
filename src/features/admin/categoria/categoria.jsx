@@ -248,8 +248,8 @@ const VALIDATION_RULES = {
 // ===============================================
 // DATOS DE CONFIGURACIÓN
 // ===============================================
-const API_CATEGORIAS = "http://localhost:5272/api/CategoriaProductos";
-const API_PRODUCTOS = "http://localhost:5272/api/Productos";
+const API_CATEGORIAS = "https://www.bosquesagrado.somee.com/api/CategoriaProductos";
+const API_PRODUCTOS = "https://www.bosquesagrado.somee.com/api/Productos";
 const ITEMS_PER_PAGE = 10;
 
 // ===============================================

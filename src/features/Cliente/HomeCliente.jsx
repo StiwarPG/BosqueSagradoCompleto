@@ -32,7 +32,7 @@ import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 
 // URL base de la API
-const API_BASE_URL = 'http://localhost:5272/api';
+const API_BASE_URL = 'https://www.bosquesagrado.somee.com/api';
 
 // Funciones API para obtener datos
 const fetchCabinsFromAPI = async () => {

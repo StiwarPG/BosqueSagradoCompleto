@@ -252,11 +252,11 @@ const VALIDATION_RULES = {
 // ===============================================
 // DATOS DE CONFIGURACIÓN
 // ===============================================
-const API_VENTAS = "http://localhost:5272/api/Ventas";
-const API_RESERVAS = "http://localhost:5272/api/Reservas";
-const API_PRODUCTOS = "http://localhost:5272/api/Productos";
-const API_SERVICIOS = "http://localhost:5272/api/Servicios";
-const API_DETALLE_VENTA = "http://localhost:5272/api/DetalleVenta";
+const API_VENTAS = "https://www.bosquesagrado.somee.com/api/Ventas";
+const API_RESERVAS = "https://www.bosquesagrado.somee.com/api/Reservas";
+const API_PRODUCTOS = "https://www.bosquesagrado.somee.com/api/Productos";
+const API_SERVICIOS = "https://www.bosquesagrado.somee.com/api/Servicios";
+const API_DETALLE_VENTA = "https://www.bosquesagrado.somee.com/api/DetalleVenta";
 const ITEMS_PER_PAGE = 10;
 
 // Métodos de pago predefinidos
@@ -1107,7 +1107,7 @@ const Ventas = () => {
     if (error.code === 'NETWORK_ERROR' || error.message === 'Network Error') {
       errorMessage = "Error de conexión. Verifica que el servidor esté ejecutándose.";
     } else if (error.code === 'ECONNREFUSED') {
-      errorMessage = "No se puede conectar al servidor en http://localhost:5272";
+      errorMessage = "No se puede conectar al servidor en https://www.bosquesagrado.somee.com";
     } else if (error.response) {
       if (error.response.status === 400) {
         errorMessage = `Error de validación: ${error.response.data?.title || error.response.data?.message || 'Datos inválidos'}`;

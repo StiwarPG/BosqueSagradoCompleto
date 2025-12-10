@@ -175,7 +175,7 @@ const btnSecondaryStyle = {
 // ===============================================
 // URLs DE LA API
 // ===============================================
-const API_BASE_URL = "http://localhost:5272/api";
+const API_BASE_URL = "https://www.bosquesagrado.somee.com/api";
 const API_URLS = {
   RESERVAS: `${API_BASE_URL}/Reservas`,
   SEDES: `${API_BASE_URL}/Sede`,
